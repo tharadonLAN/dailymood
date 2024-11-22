@@ -1,0 +1,47 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services' // เพิ่ม Google services plugin สำหรับ Firebase
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.syn.dailymood" // แก้ไขเป็น package name ที่ถูกต้อง
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // ใช้ applicationId ที่สอดคล้องกับ Firebase
+        applicationId = "com.syn.dailymood" // แก้ไข applicationId ให้ตรงกับที่ลงทะเบียนไว้ใน Firebase
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            // ใช้ debug signing config สำหรับตอนนี้ (สามารถแก้ไขได้ในภายหลัง)
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// ใช้ plugin ของ Google services เพื่อให้ Firebase ทำงานได้
+apply plugin: 'com.google.gms.google-services'

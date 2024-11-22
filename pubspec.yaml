@@ -1,0 +1,72 @@
+name: dailymood
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.14.0
+  firebase_auth: ^4.8.0
+  cloud_firestore: ^4.17.5
+  provider: ^6.0.0
+  sqflite: ^2.0.0+4
+  path_provider: ^2.0.9
+  path: ^1.8.3
+  image_picker: ^0.8.5+3
+  fl_chart: ^0.69.0
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Sarabun
+      fonts:
+        - asset: fonts/Sarabun-Regular.ttf
+        - asset: fonts/Sarabun-Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/book.jpg
+    - assets/forest_1.jpg
+    - assets/forest_2.jpg
+    - assets/Funeral.JPG
+    - assets/gym.jpg
+    - assets/hua hin market.JPG
+    - assets/InHospitalRoom.jpg
+    - assets/lake_1.jpg
+    - assets/lake_2.jpg
+    - assets/logo.png
+    - assets/male student group.JPG
+    - assets/medic.jpg
+    - assets/MeetFriends.JPG
+    - assets/my mom at beach.JPG
+    - assets/my sports team after the match.jpg
+    - assets/park_1.jpg
+    - assets/park_2.jpg
+    - assets/Party at my home.JPG
+    - assets/Peaceful garden.jpg
+    - assets/Playing guitar in the classroom.JPG
+    - assets/Pork BBQ party with my classmates.JPG
+    - assets/runtrack.jpg
+    - assets/Scuba diving.jpg
+    - assets/Seaside horse.JPG
+    - assets/sofa.jpg
+    - assets/Take my younger brother to the airport.JPG
+    - assets/Taking a photo with friends at university.JPG
+    - assets/temple_1.JPG
+    - assets/Theater.jpg
+    - assets/TrafficJam.jpg
+    - assets/waterfall_1.jpg
+    - assets/waterfall_2.jpg
+
+      
+

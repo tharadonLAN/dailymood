@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "449035208032",
+    "project_id": "dailymood-30510",
+    "storage_bucket": "dailymood-30510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449035208032:android:9bb9abf3ce056e496a0a05",
+        "android_client_info": {
+          "package_name": "com.syn.dailymood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwjFECeW4V-xoKuKj3Hl8v4nUUFoGfhxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
